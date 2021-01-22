@@ -1,3 +1,5 @@
+
+
 $(window).scroll(function () {
 
   if ($(window).scrollTop() >= 1) {
@@ -73,6 +75,11 @@ $(".switch.switchh6").click(function() {
       scrollTop: $(".scrolltop1").offset().top
   }, 1000);
 });
+$(".switch.switchf1").click(function() {
+  $('html, body').animate({
+      scrollTop: $(".footscroll").offset().top
+  }, 1000);
+});
 jQuery("#carousel").owlCarousel({
     autoplay: false,
     lazyLoad: true,
@@ -109,6 +116,24 @@ jQuery("#carousel").owlCarousel({
       }
     }
   });
+  jQuery("#carouselnew").owlCarousel({
+    autoplay: false,
+    lazyLoad: true,
+    loop: true,
+    margin:20,
+    responsiveClass: true,
+    autoHeight: true,
+    autoplayTimeout: 7000,
+    smartSpeed: 800,
+    nav: true,
+    navText: ["<img src='imgs/left.svg'>","<img src='imgs/right.svg'>"],
+    dots:true,
+    responsive: {
+      0: {
+        items: 3
+      }
+    }
+  });
 
   function toggle() {
     var tog = document.querySelector('.toggle');
@@ -117,3 +142,4 @@ jQuery("#carousel").owlCarousel({
     tog.classList.toggle('clicked');
     cir.classList.toggle('clicked');
 }
+
