@@ -22,12 +22,15 @@
                 <div class="headerLogo">
                     <a href="index.html"><img src="imgs/logo.svg" alt="logo" class="img-fluid">
                     </a>
+                    <a href="#0" class="hamburger">
+                        <span class="navIcon"></span>
+                    </a>
                 </div>
                 <div class="headercontent">
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="healthy.html">Health & Hydration</a></li>
-                        <li><a href="testimonals.html" class="active">Testimonials</a></li>
+                        <li><a href="healthy.html" class="active">Health & Hydration</a></li>
+                        <li><a href="testimonals.html">Testimonials</a></li>
                         <li><a href="#0">Financial Freedom</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
@@ -35,6 +38,7 @@
             </div>
         </div>
     </header>
+
 
     <section class="healthbg boxs scrolltop1">
         <div class="togglebtn">
@@ -171,18 +175,19 @@
         </div>
     </section>
 
-    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal videoModal fade" id="myModal" role="dialog">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
-                </div>
-                <div class="modal-body">
-                    <p>This is a large modal.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <a href="#0" class="closed" onclick="pauseVid()" data-dismiss="modal"><span>&times;</span></a>
+                <div class="videoAll">
+             <div class="videoTag" onclick="playVid()">
+                 <img src="imgs/play.svg" alt="play" class="img-fluid">
+             </div>
+                        <video id="myVideo" width="100%" height="100%" controls>
+                            <source src="imgs/video2.mp4" type="video/mp4"  >
+                            <source src="imgs/video2.mp4" type="video/ogg"  >
+                         
+                          </video>
                 </div>
             </div>
         </div>

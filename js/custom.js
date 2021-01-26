@@ -112,8 +112,12 @@ jQuery("#carousel").owlCarousel({
     dots:true,
     responsive: {
       0: {
+        items: 1
+      },
+  
+      510: {
         items: 3
-      }
+      },
     }
   });
   jQuery("#carouselnew").owlCarousel({
@@ -130,8 +134,12 @@ jQuery("#carousel").owlCarousel({
     dots:true,
     responsive: {
       0: {
+        items: 1
+      },
+  
+      510: {
         items: 3
-      }
+      },
     }
   });
 
@@ -141,5 +149,37 @@ jQuery("#carousel").owlCarousel({
 
     tog.classList.toggle('clicked');
     cir.classList.toggle('clicked');
+    
 }
+
+$(document).on('click','.hamburger',function(){
+$(this).addClass('active');
+$('.headercontent').animate({'left':'0'});
+});
+$(document).on('click','.hamburger.active',function(){
+  $(this).removeClass('active');
+  $('.headercontent').animate({'left':'-250px'});
+  });
+
+  var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+  $('.videoTag').hide();
+} 
+
+function pauseVid() { 
+  vid.pause();
+} 
+$(document).on('click','.videoAll video',function(){
+  $('.videoTag').hide();
+});
+$('#qwe').click(function() {
+  $('#file-name').attr("value", "");  
+  // $('#ht1').attr("value", "");  
+});
+$(document).on('scroll',function(){
+  $('#file-name').attr("value", " "); 
+});
+
 

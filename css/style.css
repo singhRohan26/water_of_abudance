@@ -766,7 +766,7 @@ padding: 25px 0px;
 .copyRight{
 	display: flex;
 	justify-content: space-between;
-	padding: 25px;
+	padding: 25px 0px;
 }
 .copyRight {
 	border-top: 1px solid rgb(255 255 255 / .4);;
@@ -1033,3 +1033,76 @@ button.btns:hover{
 width: 75px;
 height: 75px;
 }
+.hamburger{
+	display: none;
+}
+.testimg img,.videoTag img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.testimonals {
+	width: 100%;
+}
+.heathUp.heathUptest{
+    top: 40px;
+}
+.testab1{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.testab,.videoTag{
+width: 75px;
+height: 75px;
+}
+.videoAll{
+	height: 600px;
+	position: relative;
+}
+.videoAll video{
+	width: 100%;
+	height: 100%;
+}
+
+.videoModal .modal-dialog.modal-lg{
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	background: transparent;
+}
+.modal-content{
+	background: transparent;
+	position: relative;
+}
+.closed{
+    position: absolute;
+    top: 15px;
+    right: -75px;
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.videoAll:focus,.videoAll video{
+	outline: none;
+}
+.videoTag{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    z-index: 99;
+}
+
