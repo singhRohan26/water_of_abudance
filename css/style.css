@@ -95,9 +95,9 @@ a:focus {
 
 /* heading and para code :start */
 h2.mainHead{
-	font-size: 92px;
+	font-size: 75px;
 	font-family: var(--bold);
-	line-height: 112px;
+	line-height: 100px;
 	color: var(--colorWhite);
 }
 h2.head{
@@ -160,12 +160,15 @@ box-shadow: 0 6px 12px rgba(0,0,0,.175);
 	font-family: var(--bold);
 }
 .headercontent ul li a::before{
-position: absolute;
-content: '';
-bottom: -5px;
-width: 0;
-height: 2px;
-background: var(--colorWhite);
+	position: absolute;
+    content: '';
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: var(--colorWhite);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 .headercontent ul li a:hover::before{
 	width: 100%;
@@ -291,7 +294,7 @@ position: absolute;
 }
 .bgRight{
 	position: absolute;
-	right: -12%;
+	right: -2%;
 	opacity: .7;
 }
 .bgLeft{
@@ -302,6 +305,16 @@ position: absolute;
     left: -65px;
     top: 30%;
     transform: rotate(-90deg);
+}
+.itemsAlll p{
+	width: 45%;
+}
+.bgRight.bgRight23{
+	width: 50%;
+    right: -6%;
+}
+.bgRight.bgRight23 p{
+	width: 100%;
 }
 .bgscroll::before{
     position: absolute;
@@ -326,6 +339,9 @@ position: absolute;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+.bgRight h2{
+	text-transform: uppercase;
 }
 .allthings{
 	position: relative;
@@ -474,6 +490,7 @@ position: absolute;
   }
   .firstBox p{
 	font-size: 16px;
+	padding-top: 25px !important;
 }
 .journeyBox{
 	display: flex;
@@ -797,6 +814,8 @@ padding: 25px 0px;
 	content: '';
 	bottom: -5px;
 	left: 0;
+	right: 0;
+	margin: 0 auto;
 	background: var(--colorWhite);
 }
 .copyLeft ul li a:hover::before{
@@ -1300,6 +1319,16 @@ height: 75px;
     right: 0;
     bottom: 30px;
     justify-content: center;
+}
+.bgRight.bgRight23 h2{
+	font-size: 60px;
+    line-height: 70px;
+}
+.bgRight.bgRight23 p{
+	font-size: 20px;
+}
+.bgRight.bgRight23{
+	padding-top: 42px;
 }
 .scroll {
 
