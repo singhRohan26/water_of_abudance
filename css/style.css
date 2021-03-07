@@ -307,7 +307,11 @@ position: absolute;
     transform: rotate(-90deg);
 }
 .itemsAlll p{
-	width: 45%;
+	width: 100%;
+}
+.bgColor.bgColor22{
+	opacity: 0.8;
+	background-color: #000;
 }
 .bgRight.bgRight23{
 	width: 50%;
@@ -1329,6 +1333,7 @@ height: 75px;
 }
 .bgRight.bgRight23{
 	padding-top: 42px;
+	display: none;
 }
 .scroll {
 

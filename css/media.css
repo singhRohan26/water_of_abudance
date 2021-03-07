@@ -26,6 +26,9 @@ h2.head {
 .sectionbg{
 	height: 100%;
 }
+.itemsAlll p {
+    width: 100%;
+}
 	}
 	@media(max-width:992px){
 		.container{
@@ -195,7 +198,7 @@ h2.head {
 		padding-top: 25px;
 	}
 	.healthbgin,.bgColor,.heathUp{
-		height: 635px;
+		height: 100vh;
 	}
 	.headerLogo {
 		width: 50%;
@@ -255,13 +258,13 @@ h2.head {
 }
 @media(max-width:500px){
 	.healthbg:first-child .healthbgin,.healthbg:first-child .healthbgin .bgColor,.healthbg:first-child .healthbgin .heathUp {
-		height: 550px;
+		height: 100vh;
 	}
 	.healthbg.boxs.scrolltop1 .healthbgin,.healthbg.boxs.scrolltop1 .bgColor,.healthbg.boxs.scrolltop1 .heathUp  {
 		height: 100vh;
 	}
 	.healthbg.boxs.scrolltop2 .healthbgin,.healthbg.boxs.scrolltop2 .bgColor,.healthbg.boxs.scrolltop2 .heathUp  {
-		height: 750px;
+		height: 100vh;
 	}
 	.magic p {
 		font-size: 19px;
@@ -279,8 +282,24 @@ display: none;
 		line-height: 35px;
 	}
 	h2.mainHead {
-		font-size: 36px;
-		line-height: 55px;
+		font-size: 32px;
+		line-height: 50px;
+	}
+	.bgscroll p {
+		font-size: 14px;
+		line-height: 34px;
+	}
+	.bgscroll::before {
+		position: absolute;
+		content: '';
+		height: 2px;
+		width: 45px;
+		top: 16px;
+		right: 45px;
+		background: var(--colorWhite);
+	}
+	.bgColor {
+		background: radial-gradient(6.06% 21.03% at 105.16% 49.59%, rgba(115, 115, 115, 0) 0%, #000000 100%);
 	}
 	.phContent p {
 		font-size: 16px;
@@ -289,7 +308,7 @@ display: none;
 		display: none;
 	}
 	.sectionbg {
-		height: 160vh;
+		height: 100vh;
 		width: 100%;
 	}
 	.members ul li{
@@ -298,21 +317,42 @@ display: none;
 		margin: 0;
 		margin-bottom: 10px;
 	}
+	.members ul{
+		padding: 0;
+	}
+	.members {
+		padding: 10px 0px;
+	}
 	.members ul li:nth-child(even){
 		width: 49%;
 		float: right;
 	}
 	.memberimg {
-		width: 125px;
-		height: 125px;
+		width: 75px;
+		height: 75px;
 		margin: 0 auto;
+		border: 5px solid #ccc;
+	}
+	.members h2{
+		padding-bottom: 10px;
+	}
+	.journayImg{
+		display: none;
+	}
+	.membercontent p {
+		color: var(--colorWhite);
+		font-size: 14px;
+		font-family: var(--bold);
+		line-height: 18px;
+		text-align: center;
+		padding-top: 8px;
 	}
 	.journeyBox{
 		display: block;
 	}
 	.firstBox{
 		width: 100%;
-		padding: 10px 0px;
+		padding: 0px 0px;
 	}
 	.journeyBox{
 		padding: 25px;
@@ -321,23 +361,29 @@ display: none;
 		border: none;
 	}
 	.journayAll{
-		height: 195vh;
+		height: 100vh;
+	}
+	.container{
+		padding: 0px 15px;
+	}
+	.jourContent{
+		padding: 15px;
 	}
 	.topJour {
-		padding-top: 80px !important;
+		/* padding-top: 80px !important; */
 	}
 	.trnasInn .col-sm-3{
 		width: 50%;
 	}
 	.transfBg img,.transfBg,.transform.scroll3.boxs,.transform.scroll3.boxs .bgColor,.transscroll{
-		height: 178vh;
+		height: 100vh;
 	}
 	.transfimg{
 		padding-top: 35px;
 	}
 	.jourContent p {
 
-		padding: 15px 0px 40px;
+		padding: 10px 0px 10px;
 	}
 	.boxs.flow.scroll4,.boxs.flow.scroll4 .transfBg.boxs,.boxs.flow.scroll4 .bgColor,.knowScroll{
 		height: 145vh;
@@ -355,7 +401,7 @@ margin-right: 15px;
 		line-height: 32px;
 	}
 	.boxs.flow.scroll5,.boxs.flow.scroll5 .transfBg ,.boxs.flow.scroll5 .transfBg img,.boxs.flow.scroll5 .bgColor{
-		height: 110vh;
+		height: 100vh;
 	}
 	.storiesSlider .owl-nav{
 		position: absolute;
@@ -413,6 +459,96 @@ margin-right: 15px;
 	button.btns{
 		font-size: 18px;
 	}
+	.scroll {
+	    height: 38px;
+    width: 20px;
+	}
+	.chance.owl-slider.scroll7.boxs .owl-carousel .owl-stage-outer,.chance.owl-slider.scroll7.boxs .bgImg,.bgColor,.chance.owl-slider.scroll7.boxs .bgColor{
+		height: 100vh;
+	}
+	.transform.scroll3.boxs,.transscroll {
+		height: 100vh;
+	}
+	.transFirdt img{
+		width: 45px;
+	}
+	p.mainnew {
+		padding-bottom: 12px;
+	}
+	.transfimg,.transfimg p {
+		padding-top: 10px;
+	}
+	.transfimg p br{
+		display: none;
+	}
+	.knowScroll,.boxs.flow.scroll4{
+		height: 100vh;
+	}
+	.flowContent h2 {
+		font-size: 16px;
+	}
+	.boxs.flow.scroll5,.boxs.flow.scroll5 .transfBg{
+		height: 100vh;
+	}
+	.storiesSlider {
+		padding-top: 20px;
+	}
+	.knowTheFlow p{
+		padding: 0;
+		line-height: 20px;
+	}
+	.oppoScroll{
+		bottom: 6px;
+	}
+	.footerLeft h3 {
+		font-size: 20px;
+	}
+	.chance.owl-slider.scroll7.boxs .bgTopp{
+		height: 100vh;
+	}
+	.heathInner h2 br{
+		display: none;
+	}
+	.didImg img{
+	    width: 75px;
+    height: 75px;
+    object-fit: contain;
+	}
+	.paddingAn {
+		padding: 25px 0px;
+	}
+	.didCon p{
+		padding-top: 12px;
+	}
+	.healthbg.boxs.scrolltop2 .heathUp ,.healthbg.boxs.scrolltop3 .heathUp{
+		height: 100vh;
+	}
+	.magic p::before,.magic p::after{
+		content: '';
+	}
+	.healthbg.boxs.scrolltop1.scrolltop160 .heathUp,.healthbg.boxs.scrolltop1.scrolltop160 .bgColor,.healthbg.boxs.scrolltop1.scrolltop160 .healthbgin {
+		height: 137vh;
+	}
+	.healthbg.boxs.scrolltop1.scrolltop12 .healthbgin, .healthbg.boxs.scrolltop1.scrolltop12 .bgColor, .healthbg.boxs.scrolltop1.scrolltop12 .heathUp {
+		height: 75vh;
+	}
+	.healthbg.boxs.scrolltop1.scrolltop12.section.inView h2{
+		padding-top: 25px;
+	}
+.healthbg.boxs.scrolltop3.scrolltop31 .heathUp{
+	height: 88vh;
+}
+.healthbg.boxs.scrolltop3.scrolltop31 .healthbgin{
+	height: 90vh;
+}
+.chance.owl-slider.scroll7.scroll71.boxs .owl-carousel .owl-stage-outer,.chance.owl-slider.scroll7.scroll71.boxs .bgColor,.chance.owl-slider.scroll7.scroll71.boxs .bgTopp{
+	height: 70vh  !important;
+}
+.healthbg.boxs.scrolltop6.scrolltop63.section.inView .healthbgin,
+.healthbg.boxs.scrolltop6.scrolltop63.section.inView.bgColor,
+.healthbg.boxs.scrolltop6.scrolltop63.section.inView .heathUp{
+height: 50vh;
+}
 }
 
 @media(max-width:400px){
@@ -420,12 +556,12 @@ margin-right: 15px;
 		font-size: 17px;
 		line-height: 32px;
 	}
-	.healthbg.boxs.scrolltop3 .healthbgin,.healthbg.boxs.scrolltop3 .bgColor,.healthbg.boxs.scrolltop3 .heathUp  {
+	/* .healthbg.boxs.scrolltop3 .healthbgin,.healthbg.boxs.scrolltop3 .bgColor,.healthbg.boxs.scrolltop3 .heathUp  {
 		height: 775px;
-	}
-	.healthbg.boxs.scrolltop5 .healthbgin,.healthbg.boxs.scrolltop5 .bgColor,.healthbg.boxs.scrolltop5 .heathUp  {
+	} */
+	/* .healthbg.boxs.scrolltop5 .healthbgin,.healthbg.boxs.scrolltop5 .bgColor,.healthbg.boxs.scrolltop5 .heathUp  {
 		height: 775px;
-	}
+	} */
 	.tab-content>.tab-pane{
 		padding: 0;
 	}
@@ -433,14 +569,14 @@ margin-right: 15px;
 		content: '';
 	}
 	p.main {
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 22px;
 	}
 	.item .healthbgin,.item .bgColor,.item .heathUp{
 		height: 100vh;
 	}
 	.sectionbg{
-		height: 175vh;
+		height: 100vh;
 	}
 	.jourContent{
 		padding-top: 0;
@@ -449,9 +585,7 @@ margin-right: 15px;
 		display: flex;
 		padding-bottom: 25px;
 	}
-	.flowContent h2{
-		font-size: 18px;
-	}
+
 	.flowContent p {
 		font-size: 14px;
 		color: var(--colorWhite);
@@ -468,4 +602,31 @@ margin-right: 15px;
 	.contactleft ul li a,.form-control {
 		font-size: 18px;
 	}
+	.transfimg p{
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.contactleft h2{
+		padding: 0;
+	}
+	.healthbg.boxs.scrolltop1.scrolltop12 .healthbgin, .healthbg.boxs.scrolltop1.scrolltop12 .bgColor, .healthbg.boxs.scrolltop1.scrolltop12 .heathUp {
+		height: 75vh;
+	}
+	.healthbg.boxs.scrolltop1.scrolltop12.section.inView h2{
+		padding-top: 25px;
+	}
+.healthbg.boxs.scrolltop3.scrolltop31 .heathUp{
+	height: 88vh;
+}
+.healthbg.boxs.scrolltop3.scrolltop31 .healthbgin{
+	height: 90vh;
+}
+.chance.owl-slider.scroll7.scroll71.boxs .owl-carousel .owl-stage-outer,.chance.owl-slider.scroll7.scroll71.boxs .bgColor,.chance.owl-slider.scroll7.scroll71.boxs .bgTopp{
+	height: 70vh  !important;
+}
+.healthbg.boxs.scrolltop6.scrolltop63.section.inView .healthbgin,
+.healthbg.boxs.scrolltop6.scrolltop63.section.inView.bgColor,
+.healthbg.boxs.scrolltop6.scrolltop63.section.inView .heathUp{
+height: 50vh;
+}
 }
